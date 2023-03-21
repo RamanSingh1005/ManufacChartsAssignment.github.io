@@ -1,27 +1,30 @@
 import EChartsReact from 'echarts-for-react';
-import {wineDataSet} from './WineDataSet';
+import {wineDataSet, IWineData} from './WineDataSet';
 
 //Define data set for scatter plot.
-const scatterData = wineDataSet.map((el)=>{
-    return[el['Color intensity'],el.Hue];
+const scatterData:[number| string ,number][] = wineDataSet.map((dataPoint: IWineData)=>{
+    return[dataPoint['Color intensity'],dataPoint.Hue];
   })
 
-export const ScatterPlot = () => {
+export const ScatterPlot = (): JSX.Element => {
   // Define the options for the scatter plot
-  const scatterOptions = {
+  const scatterOptions: echarts.EChartsOption = {
     title: {
       text: 'Scatter Plot for- Color intensity Vs Hue',
     },
     xAxis: {
       type: 'value',
-      label: {
-        formatter: '{value} cm',
+      name: 'Color Intensity',
+      axisLabel: {
+        formatter: '{value}',
       },
     },
     yAxis: {
       type: 'value',
-      label: {
-        formatter: '{value} kg',
+      name: 'Hue',
+      axisLabel: {
+        formatter: '{value}',
+
       },
     },
     series: [
