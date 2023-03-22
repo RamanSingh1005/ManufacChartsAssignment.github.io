@@ -4,7 +4,7 @@ import {BarChart} from './chart/barChart';
 
 const App = (): JSX.Element => {
   return (
-    <div>
+    <div style={{width: '100%'}}>
       <ScatterPlot />
       <BarChart />
     </div>

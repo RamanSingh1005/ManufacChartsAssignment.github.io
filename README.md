@@ -6,5 +6,6 @@ To Run Locally-
 -Clone th repo.
 -And run the command yarn start.  
 
+Following are the required Screenshots
 ![](Screenshots/Screenshot1.png)
 ![](Screenshots/Screenshot2.png)

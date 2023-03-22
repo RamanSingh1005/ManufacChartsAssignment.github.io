@@ -1,9 +1,11 @@
 import { getAverageMalicDist } from '../utils/getAverageMalicDist';
 import { getColorIntensityVsHue } from '../utils/getColorIntensityVsHue';
 
+//util functions to get the required data.
 const{categories, barData}: {categories: string[], barData: number[]} = getAverageMalicDist();
 const scatterData: [string | number, number][] = getColorIntensityVsHue();
 
+// Define the options for the Bar Chart.
 export const barOptions: echarts.EChartsOption = {
     title: {
       text: 'Bar Chart for- Alcohol category Vs Average malic acid',
