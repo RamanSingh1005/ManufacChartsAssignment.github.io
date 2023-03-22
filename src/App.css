@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+/* Regular styles for .app-container */
+.app-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Media query for iPhone 5 */
+@media only screen and (max-width: 320px) {
+  .app-container {
+    max-width: 280px;
+  }
+}
+
+/* Media query for iPhone X */
+@media only screen and (max-width: 375px) {
+  .app-container {
+    max-width: 335px;
+  }
+}
+
+/* Media query for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .app-container {
+    max-width: 700px;
+  }
+}
+
+/* Media query for iPad Pro */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  .app-container {
+    max-width: 1200px;
+  }
+}
+
+/* Media query for general laptops */
+@media only screen and (min-width: 1367px) {
+  .app-container {
+    max-width: 1600px;
+  }
+}
+
