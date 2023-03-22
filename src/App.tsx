@@ -1,13 +1,17 @@
 import {ScatterPlot} from './chart/scatterPlot';
 import {BarChart} from './chart/barChart';
-import './App.css';
+import './app.css';
 
 
 const App = (): JSX.Element => {
   return (
-    <div className="app-container">
-      <ScatterPlot />
-      <BarChart />
+    <div className="App">
+      <div>
+        <ScatterPlot />
+      </div>
+      <div>
+        <BarChart />
+      </div>
     </div>
   );
 };

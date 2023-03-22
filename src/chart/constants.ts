@@ -8,7 +8,7 @@ const scatterData: [string | number, number][] = getColorIntensityVsHue();
 // Define the options for the Bar Chart.
 export const barOptions: echarts.EChartsOption = {
     title: {
-      text: 'Bar Chart for- Alcohol category Vs Average malic acid',
+      text: 'Category vs Average malic acid',
     },
     xAxis: {
       type: 'category',
@@ -31,7 +31,7 @@ export const barOptions: echarts.EChartsOption = {
 // Define the options for the scatter plot
 export const scatterOptions: echarts.EChartsOption = {
     title: {
-      text: 'Scatter Plot for- Color intensity Vs Hue',
+      text: 'Color intensity Vs Hue',
     },
     xAxis: {
       type: 'value',
